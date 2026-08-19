@@ -7,8 +7,8 @@ import * as yup from "yup";
 import axios from "axios";
 import { useEffect } from "react";
 import Cookies from "js-cookie";
-import useThinkify from "../hooks/useThinkify";
 import AlertBox from "../../components/common/AlertBox";
+import useStudentHub from "../hooks/useStudentHub";
 
 const schema = yup.object().shape({
   fullName: yup.string().required("Full Name is required"),
@@ -27,7 +27,7 @@ const Registration = () => {
   // alert message
   const navigate = useNavigate();
   const { setAlertBoxOpenStatus, setAlertMessage, setAlertSeverity } =
-    useThinkify();
+    useStudentHub();
   // form validation
   const {
     register,

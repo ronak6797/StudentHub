@@ -16,7 +16,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { Link } from "react-router-dom";
 
-import useThinkify from "../hooks/useThinkify";
+import useStudentHub from "../hooks/useStudentHub";
 
 const MyPost = () => {
   const [data, setData] = useState([]);
@@ -25,7 +25,7 @@ const MyPost = () => {
     setAlertBoxOpenStatus,
     setAlertMessage,
     setAlertSeverity,
-  } = useThinkify();
+  } = useStudentHub();
   useEffect(() => {
     const fetchData = async () => {
       setLoadingStatus(true);

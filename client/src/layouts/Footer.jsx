@@ -24,7 +24,7 @@ const Footer = () => {
         <Grid container>
           <Grid item>
             <Box sx={{ display: "flex", gap: "10px", alignItems: "center" }}>
-              <img src="./images/favicon.ico" width="55" alt="Thinkify" />
+              <img src="./images/favicon.ico" width="55" alt="StudentHub" />
               <Typography
                 sx={{
                   fontFamily: "Platypi",
@@ -33,7 +33,7 @@ const Footer = () => {
                 variant="h3"
                 component="h3"
               >
-                Thinkify
+                StudentHub
               </Typography>
             </Box>
             <Typography variant="body1">
@@ -112,17 +112,17 @@ const Footer = () => {
                 color: "#1b2e35",
               }}
             >
-              <Typography>1-800-600-0464</Typography>
-              <Typography>support@thinkify.com</Typography>
-              <Typography>900-140 10th Avenue SE</Typography>
-              <Typography>Calgary, AB TG 0R1</Typography>
+              <Typography>+91-XXXXX-XXXXX</Typography>
+              <Typography>support@studenthub.com</Typography>
+              <Typography>Jaipur</Typography>
+              <Typography>Rajasthan</Typography>
             </Box>
           </Grid>
         </Grid>
         <Divider style={{ marginBottom: "1rem" }} />
         <Box display="flex" justifyContent="space-between" alignItems="center">
           <Typography variant="body2">
-            Copyright {new Date().getFullYear()} Thikify. All rights reserved
+            Copyright {new Date().getFullYear()} StudentHub. All rights reserved
           </Typography>
           <Box>
             <Button

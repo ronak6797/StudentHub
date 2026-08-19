@@ -10,7 +10,7 @@ import {
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
-import useThinkify from "../../../src/hooks/useThinkify";
+import useStudentHub from "../../../src/hooks/useStudentHub";
 
 const OngoingTask = () => {
   const [tasks, setTasks] = useState([]);
@@ -19,7 +19,7 @@ const OngoingTask = () => {
     setAlertMessage,
     setAlertSeverity,
     setLoadingStatus,
-  } = useThinkify();
+  } = useStudentHub();
 
   useEffect(() => {
     const fetchData = async () => {

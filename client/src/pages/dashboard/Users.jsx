@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
-import useThinkify from "../../hooks/useThinkify";
+import useStudentHub from "../../hooks/useStudentHub";
 
 const Users = () => {
   const [data, setData] = useState([]);
@@ -22,7 +22,7 @@ const Users = () => {
     setAlertBoxOpenStatus,
     setAlertMessage,
     setAlertSeverity,
-  } = useThinkify();
+  } = useStudentHub();
 
   const handleDelete = async (userId) => {
     try {

@@ -8,9 +8,9 @@ import {
   InputAdornment,
 } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
-import useThinkify from "../../src/hooks/useThinkify";
 import axios from "axios";
 import Cookies from "js-cookie";
+import useStudentHub from "../../src/hooks/useStudentHub";
 
 const ChangePassword = () => {
   const {
@@ -25,7 +25,7 @@ const ChangePassword = () => {
     setAlertBoxOpenStatus,
     setAlertMessage,
     setAlertSeverity,
-  } = useThinkify();
+  } = useStudentHub();
   const [showOldPassword, setShowOldPassword] = useState(false);
   const [showNewPassword, setShowNewPassword] = useState(false);
   const [showRetypePassword, setShowRetypePassword] = useState(false);

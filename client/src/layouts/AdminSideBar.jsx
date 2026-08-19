@@ -14,17 +14,17 @@ import GroupIcon from "@mui/icons-material/Group";
 import LogoutIcon from "@mui/icons-material/Logout";
 
 import NavBar from "./NavBar";
-import useThinkify from "../hooks/useThinkify";
 import Cookies from "js-cookie";
 import { useEffect } from "react";
 import AlertBox from "../../components/common/AlertBox";
 import Footer from "./Footer";
+import useStudentHub from "../hooks/useStudentHub";
 
 const AdminSideBar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { setAlertBoxOpenStatus, setAlertMessage, setAlertSeverity } =
-    useThinkify();
+    useStudentHub();
   const listData = [
     {
       label: "My Profile",

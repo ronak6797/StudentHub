@@ -21,16 +21,16 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import Cookies from "js-cookie";
-import useThinkify from "../hooks/useThinkify";
 import AlertBox from "../../components/common/AlertBox";
 import { useEffect } from "react";
 import SellIcon from '@mui/icons-material/Sell';
+import useStudentHub from "../hooks/useStudentHub";
 
 const UserSideBar = ({ children }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const { setAlertBoxOpenStatus, setAlertMessage, setAlertSeverity } =
-    useThinkify();
+    useStudentHub();
 
   const listData = [
     {

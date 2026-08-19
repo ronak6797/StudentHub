@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import useThinkify from "../hooks/useThinkify";
 import axios from "axios";
 import {
   Container,
@@ -12,6 +11,7 @@ import {
   Button,
 } from "@mui/material";
 import { ShoppingCart } from "@mui/icons-material";
+import useStudentHub from "../hooks/useStudentHub";
 
 const Product = () => {
   const { productId } = useParams();
@@ -20,7 +20,7 @@ const Product = () => {
     setAlertBoxOpenStatus,
     setAlertSeverity,
     setAlertMessage,
-  } = useThinkify();
+  } = useStudentHub();
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -92,7 +92,7 @@ const Product = () => {
               alignItems="center"
             >
               <Typography variant="h6" sx={{ marginTop: 2, color: "#59e3a7" }}>
-                Price: ${product.price}
+                Price: ₹ {product.price}
               </Typography>
               <Button
                 sx={{

@@ -10,7 +10,7 @@ import {
   Legend,
 } from "recharts";
 
-import useThinkify from "../../src/hooks/useThinkify";
+import useStudentHub from "../../src/hooks/useStudentHub";
 import { Typography } from "@mui/material";
 
 const RoleCount = () => {
@@ -22,7 +22,7 @@ const RoleCount = () => {
     setAlertBoxOpenStatus,
     setAlertMessage,
     setAlertSeverity,
-  } = useThinkify();
+  } = useStudentHub();
 
   useEffect(() => {
     const fetchData = async () => {

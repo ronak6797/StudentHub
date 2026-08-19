@@ -3,10 +3,10 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import { Snackbar } from '@mui/material';
 
-import useThinkify from '../../src/hooks/useThinkify';
+import useStudentHub from '../../src/hooks/useStudentHub';
 
 const AlertBox = () => {
-    const { alertSeverity, alertBoxOpenStatus, setAlertBoxOpenStatus, alertMessage } = useThinkify();
+    const { alertSeverity, alertBoxOpenStatus, setAlertBoxOpenStatus, alertMessage } = useStudentHub();
     const handleClose = (event, reason) => {
         if (reason === 'clickaway') {
             return;

@@ -2,8 +2,8 @@ import { Box, Button, TextField, IconButton, Typography } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { useFormContext } from "react-hook-form";
 import axios from "axios";
-import useThinkify from "../../../src/hooks/useThinkify";
 import Cookies from 'js-cookie'
+import useStudentHub from "../../../src/hooks/useStudentHub";
 
 const AddProductForm = () => {
   const {
@@ -11,7 +11,7 @@ const AddProductForm = () => {
     setAlertBoxOpenStatus,
     setAlertMessage,
     setAlertSeverity,
-  } = useThinkify();
+  } = useStudentHub();
   const {
     register,
     handleSubmit,

@@ -8,11 +8,11 @@ import {
   Typography,
 } from "@mui/material";
 import { useEffect, useState } from "react";
-import useThinkify from "../hooks/useThinkify";
 import axios from "axios";
 import Cookies from "js-cookie";
 import { Link } from "react-router-dom";
 import { Delete, Edit } from "@mui/icons-material";
+import useStudentHub from "../hooks/useStudentHub";
 
 const MyProduct = () => {
   const [data, setData] = useState([]);
@@ -21,7 +21,7 @@ const MyProduct = () => {
     setAlertBoxOpenStatus,
     setAlertMessage,
     setAlertSeverity,
-  } = useThinkify();
+  } = useStudentHub();
 
   useEffect(() => {
     const fetchData = async () => {

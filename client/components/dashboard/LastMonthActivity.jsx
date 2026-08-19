@@ -11,7 +11,7 @@ import {
 import axios from "axios";
 import Cookies from "js-cookie";
 import { Typography } from "@mui/material";
-import useThinkify from "../../src/hooks/useThinkify";
+import useStudentHub from "../../src/hooks/useStudentHub";
 
 const LastMonthActivity = () => {
   const [countData, setCountData] = useState([]);
@@ -20,7 +20,7 @@ const LastMonthActivity = () => {
     setAlertBoxOpenStatus,
     setAlertMessage,
     setAlertSeverity,
-  } = useThinkify();
+  } = useStudentHub();
   useEffect(() => {
     const fetchData = async () => {
       try {

@@ -13,10 +13,10 @@ import { useForm } from "react-hook-form";
 import Cookies from "js-cookie";
 import { useEffect } from "react";
 import axios from "axios";
-import useThinkify from "../hooks/useThinkify";
 import AlertBox from "../../components/common/AlertBox";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import useStudentHub from "../hooks/useStudentHub";
 
 const schema = yup.object().shape({
   email: yup.string().email("Invalid email").required("Email is required"),
@@ -27,7 +27,7 @@ const Login = () => {
   const navigate = useNavigate();
   // alert message
   const { setAlertBoxOpenStatus, setAlertMessage, setAlertSeverity } =
-    useThinkify();
+    useStudentHub();
   // form validation
   const {
     register,

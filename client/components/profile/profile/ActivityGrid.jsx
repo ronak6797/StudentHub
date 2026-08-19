@@ -2,7 +2,7 @@ import { Container, Grid, Card } from "@mui/material";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
-import useThinkify from "../../../src/hooks/useThinkify";
+import useStudentHub from "../../../src/hooks/useStudentHub";
 
 const ActivityGrid = () => {
   const [activityData, setActivityData] = useState([]);
@@ -11,7 +11,7 @@ const ActivityGrid = () => {
     setAlertMessage,
     setAlertSeverity,
     setLoadingStatus,
-  } = useThinkify();
+  } = useStudentHub();
   const weeks = [];
   let week = [];
 

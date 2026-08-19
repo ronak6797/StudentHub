@@ -12,10 +12,10 @@ import Cookies from "js-cookie";
 
 import ProfileCardDetails from "../../components/profile/profile/ProfileCardDetails";
 import ActivityGrid from "../../components/profile/profile/ActivityGrid";
-import useThinkify from "../hooks/useThinkify";
 import RecentPost from "../../components/profile/profile/RecentPost";
 import LatestProduct from "../../components/profile/profile/LatestProduct";
 import OngoingTask from "../../components/profile/profile/OngoingTask";
+import useStudentHub from "../hooks/useStudentHub";
 
 const Profile = () => {
   const [data, setData] = useState(null);
@@ -24,7 +24,7 @@ const Profile = () => {
     setLoadingStatus,
     setAlertMessage,
     setAlertSeverity,
-  } = useThinkify();
+  } = useStudentHub();
 
   useEffect(() => {
     const fetchData = async () => {

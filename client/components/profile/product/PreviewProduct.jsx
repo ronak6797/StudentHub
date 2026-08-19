@@ -60,7 +60,7 @@ const PreviewProduct = () => {
             >
               Price:{" "}
               <span style={{ fontWeight: "bold", color: "#1b2e35" }}>
-                ${watch("price")}
+                ₹{watch("price")}
               </span>
             </Typography>
           </>

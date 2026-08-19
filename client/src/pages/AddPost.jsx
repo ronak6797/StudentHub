@@ -13,9 +13,9 @@ import SimpleMdeReact from "react-simplemde-editor";
 import { marked } from "marked";
 import DOMPurify from "dompurify";
 import "easymde/dist/easymde.min.css";
-import useThinkify from "../hooks/useThinkify";
 import axios from "axios";
 import Cookies from "js-cookie";
+import useStudentHub from "../hooks/useStudentHub";
 
 const AddPost = () => {
   const {
@@ -23,7 +23,7 @@ const AddPost = () => {
     setAlertBoxOpenStatus,
     setAlertMessage,
     setAlertSeverity,
-  } = useThinkify();
+  } = useStudentHub();
   const {
     handleSubmit,
     register,

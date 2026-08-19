@@ -22,7 +22,6 @@ import {
   Box,
   Stack,
 } from "@mui/material";
-import useThinkify from "../hooks/useThinkify";
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
@@ -35,6 +34,7 @@ import {
 } from "react-share";
 import { marked } from "marked";
 import DOMPurify from "dompurify";
+import useStudentHub from "../hooks/useStudentHub";
 
 const reactionsList = [
   { type: "like", icon: <ThumbUp />, color: "primary" },
@@ -44,13 +44,13 @@ const reactionsList = [
 
 const Post = () => {
   const { postId } = useParams();
-  const shareUrl = `https://thinkify.vercel.app/posts/${postId}`;
+  const shareUrl = `https://StudentHub.vercel.app/posts/${postId}`;
   const {
     setLoadingStatus,
     setAlertBoxOpenStatus,
     setAlertSeverity,
     setAlertMessage,
-  } = useThinkify();
+  } = useStudentHub();
   const [post, setPost] = useState(null);
   const [commentText, setCommentText] = useState("");
   const renderMarkdown = (description) => {

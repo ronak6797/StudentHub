@@ -6,10 +6,10 @@ import AddIcon from "@mui/icons-material/Add";
 import AddTask from "../../components/profile/task-management/AddTask";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import useThinkify from "../hooks/useThinkify";
 import dayjs from "dayjs";
 import { useForm, FormProvider } from "react-hook-form";
 import Cookies from "js-cookie";
+import useStudentHub from "../hooks/useStudentHub";
 
 const TaskManager = () => {
   const [allTask, setAllTask] = useState([]);
@@ -22,7 +22,7 @@ const TaskManager = () => {
     setAlertBoxOpenStatus,
     setAlertMessage,
     setAlertSeverity,
-  } = useThinkify();
+  } = useStudentHub();
   const [selectedDate, setSelectedDate] = useState(dayjs());
   const methods = useForm({
     defaultValues: {

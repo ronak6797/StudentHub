@@ -18,8 +18,8 @@ const Banner = () => {
                         }}
                         variant="h1"
                         component="h1"
-                    >Thinkify</Typography>
-                    <Typography sx={{ color: "#797979" }} variant="body1">At Thinkify, our mission is to provide a dynamic and intuitive platform that empowers individuals to transform their ideas into actionable tasks.</Typography>
+                    >StudendHub</Typography>
+                    <Typography sx={{ color: "#797979" }} variant="body1">At StudentHub, our mission is to provide a dynamic and intuitive platform that empowers individuals to transform their ideas into actionable tasks.</Typography>
                     <Box sx={{ margin: "30px 0 35px 0" }}>
                         <form action="" method="post" >
                             <TextField
@@ -40,7 +40,7 @@ const Banner = () => {
                     </Stack>
                 </Grid>
                 <Grid item xs={6}>
-                    <img style={{ width: "100%" }} src="/images/banner.jpg" alt="Thinkify" />
+                    <img style={{ width: "100%" }} src="/images/banner.jpg" alt="StudentHub" />
                 </Grid>
             </Grid>
         </>
