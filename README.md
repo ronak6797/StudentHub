@@ -1,6 +1,6 @@
-# NexaHub
+# StudentHub
 
-NexaHub is a modern full-stack web application built using the MERN stack.
+StudentHub is a modern full-stack web application built using the MERN stack.
 
 It provides a clean and responsive platform with authentication, user management, content management, and an interactive dashboard.
 
